@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { getAssetPath } from "../utils/asset";
 
 interface CategoryArchesProps {
   onSelectCategory: (categoryName: string) => void;
@@ -12,21 +13,21 @@ export default function CategoryArches({ onSelectCategory }: CategoryArchesProps
       id: "bestsellers",
       title: "SHOP BESTSELLERS",
       titlePt: "MAIS VENDIDOS",
-      image: "/category-bestsellers.jpg",
+      image: getAssetPath("/category-bestsellers.jpg"),
       shape: "rounded-[45px] sm:rounded-[65px]",
     },
     {
       id: "favorites",
       title: "SHOP FAVORITES",
       titlePt: "NOSSOS FAVORITOS",
-      image: "/category-favorites.jpg",
+      image: getAssetPath("/category-favorites.jpg"),
       shape: "rounded-full", // Oval arch matching center of reference image
     },
     {
       id: "new",
       title: "SHOP NEW",
       titlePt: "LANÇAMENTOS",
-      image: "/category-new.jpg",
+      image: getAssetPath("/category-new.jpg"),
       shape: "rounded-[45px] sm:rounded-[65px]",
     },
   ];

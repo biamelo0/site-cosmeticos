@@ -1,3 +1,5 @@
+import { getAssetPath } from "../utils/asset";
+
 export interface Product {
   id: string;
   name: string;
@@ -29,7 +31,7 @@ export const PRODUCTS: Product[] = [
     reviewCount: 142,
     badge: "Mais Amado",
     badgeColor: "bg-[#7A905E] text-white",
-    image: "/featured-lotion.jpg",
+    image: getAssetPath("/featured-lotion.jpg"),
     description: "Uma loção rica e aveludada infundida com manteiga de karité pura, esqualano vegetal e óleo de semente de uva. Proporciona hidratação de 48 horas com absorção instantânea sem deixar sensação pegajosa.",
     volume: "250ml",
     ingredients: ["Manteiga de Karité Orgânica", "Esqualano Vegetal 100% Puro", "Óleo de Semente de Uva", "Extrato de Camomila"],
@@ -47,7 +49,7 @@ export const PRODUCTS: Product[] = [
     reviewCount: 98,
     badge: "Mais Vendido",
     badgeColor: "bg-[#3D4A2D] text-[#FAF7F2]",
-    image: "/featured-bodywash.jpg",
+    image: getAssetPath("/featured-bodywash.jpg"),
     description: "Duo purificante enriquecido com extratos de eucalipto, sálvia e óleo de jojoba. Limpa delicadamente a pele enquanto preserva a barreira lipídica e proporciona um verdadeiro banho de aromaterapia.",
     volume: "2x 300ml",
     ingredients: ["Óleo de Jojoba Prensado a Frio", "Extrato Botânico de Sálvia", "Óleo Essencial de Eucalipto", "Pantenol (Pró-Vitamina B5)"],
@@ -65,7 +67,7 @@ export const PRODUCTS: Product[] = [
     reviewCount: 86,
     badge: "Edição Especial",
     badgeColor: "bg-[#C29B38] text-white",
-    image: "/featured-shampoo.jpg",
+    image: getAssetPath("/featured-shampoo.jpg"),
     description: "Ritual capilar botânico desenvolvido com biotina vegetal, óleo de pracaxi e extrato de alecrim. Estimula o crescimento saudável, restaura o brilho espelhado e fortalece os fios da raiz às pontas.",
     volume: "2x 250ml",
     ingredients: ["Biotina Vegetal", "Óleo Amazônico de Pracaxi", "Extrato de Alecrim Orgânico", "Aminoácidos da Aveia"],
@@ -83,7 +85,7 @@ export const PRODUCTS: Product[] = [
     reviewCount: 214,
     badge: "Novo",
     badgeColor: "bg-[#7A905E] text-white",
-    image: "/product-serum.jpg",
+    image: getAssetPath("/product-serum.jpg"),
     description: "Concentrado biotecnológico com 15% de Vitamina C estabilizada, Ácido Hialurônico botânico e Vitamina E natural. Uniformiza o tom da pele, reduz linhas finas e devolve o viço radiante.",
     volume: "30ml",
     ingredients: ["Vitamina C Estabilizada 15%", "Ácido Hialurônico de Triplo Peso Molecular", "Vitamina E Natural", "Ferulato de Soja"],
@@ -101,7 +103,7 @@ export const PRODUCTS: Product[] = [
     reviewCount: 165,
     badge: "Destaque",
     badgeColor: "bg-[#3D4A2D] text-[#FAF7F2]",
-    image: "/product-creme.jpg",
+    image: getAssetPath("/product-creme.jpg"),
     description: "Fórmula regeneradora que atua durante o ciclo noturno de reparação celular. Com bakuchiol (alternativa botânica suave ao retinol) e ceramidas puras para regenerar a firmeza e elasticidade.",
     volume: "50ml",
     ingredients: ["Bakuchiol 1% (Retinol Botânico)", "Complexo de 3 Ceramidas Essenciais", "Óleo de Rosa Mosqueta Chilena"],
@@ -119,7 +121,7 @@ export const PRODUCTS: Product[] = [
     reviewCount: 92,
     badge: "100% Puro",
     badgeColor: "bg-[#C29B38] text-white",
-    image: "/product-oil.jpg",
+    image: getAssetPath("/product-oil.jpg"),
     description: "Óleo 100% puro prensado a frio, rico em ácidos graxos essenciais ômega 3, 6 e 9. Sela a hidratação, confere luminosidade imediata e protege contra os danos oxidativos diários.",
     volume: "45ml",
     ingredients: ["Óleo de Rosa Mosqueta Selvagem Prensado a Frio", "Óleo Botânico de Açaí", "Extrato Antioxidante de Alecrim"],

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { getAssetPath } from "../utils/asset";
 
 interface HeroProps {
   onCtaClick: () => void;
@@ -23,7 +24,7 @@ export default function Hero({ onCtaClick, onOpenQuiz }: HeroProps) {
           {/* Main Hero Background Image: Custom High-End Botanical Pedestal Staging */}
           <div className="absolute inset-0 bg-[#D8CEBA]">
             <img
-              src="/hero-botanicals.jpg"
+              src={getAssetPath("/hero-botanicals.jpg")}
               alt="Cosméticos Botânicos Verdure em pedestais arquitetônicos com iluminação natural e sombras tropicais"
               className="w-full h-full object-cover object-[70%_center] sm:object-center transform scale-100 hover:scale-102 transition-transform duration-1000 ease-out"
             />

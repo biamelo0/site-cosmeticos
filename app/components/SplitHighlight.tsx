@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Product } from "./data";
+import { getAssetPath } from "../utils/asset";
 
 interface SplitHighlightProps {
   onOpenProduct: (product: Product) => void;
@@ -19,7 +20,7 @@ export default function SplitHighlight({ onOpenProduct, products }: SplitHighlig
           {/* Left Column (Approx 60-65%): Wide Photographic Card */}
           <div className="lg:col-span-7 xl:col-span-8 relative rounded-3xl overflow-hidden shadow-xl border border-[#DFD5C2] min-h-[360px] sm:min-h-[460px] group">
             <img
-              src="/category-favorites.jpg"
+              src={getAssetPath("/category-favorites.jpg")}
               alt="Composição de frascos e potes cosméticos em pedestais com luz natural e sombras botânicas"
               className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700 ease-out"
             />

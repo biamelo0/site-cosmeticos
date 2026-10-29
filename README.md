@@ -29,8 +29,21 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy no GitHub Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este projeto está 100% configurado para o **GitHub Pages** utilizando **GitHub Actions**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Como ativar:
+1. Acesse o seu repositório no GitHub: `https://github.com/biamelo0/site-cosmeticos`.
+2. Vá em **Settings** > **Pages** (no menu lateral esquerdo).
+3. Na seção **Build and deployment**:
+   - Em **Source**, selecione **GitHub Actions**.
+4. Faça um commit e push das alterações para a branch `main`:
+   ```bash
+   git add .
+   git commit -m "Configura deploy automático para o GitHub Pages"
+   git push origin main
+   ```
+5. O GitHub Actions iniciará o deploy automaticamente na aba **Actions**. Assim que concluir, o site estará online em:
+   **https://biamelo0.github.io/site-cosmeticos/**
+

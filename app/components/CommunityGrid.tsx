@@ -1,26 +1,27 @@
 "use client";
 
 import React from "react";
+import { getAssetPath } from "../utils/asset";
 
 export default function CommunityGrid() {
   const posts = [
     {
-      image: "/community-1.jpg",
+      image: getAssetPath("/community-1.jpg"),
       handle: "@clarissaglow",
       caption: "Meu momento de paz matinal com a loção botânica ✨",
     },
     {
-      image: "/community-2.jpg",
+      image: getAssetPath("/community-2.jpg"),
       handle: "@sofia.botanics",
       caption: "A textura desse creme batido é surreal de macia e nutritiva 🌿",
     },
     {
-      image: "/community-3.jpg",
+      image: getAssetPath("/community-3.jpg"),
       handle: "@beatriz.skincare",
       caption: "Glow instantâneo com apenas 3 gotinhas do elixir natural 💧",
     },
     {
-      image: "/community-4.jpg",
+      image: getAssetPath("/community-4.jpg"),
       handle: "@verdurebotanicals",
       caption: "O banho transformado em ritual de aromaterapia pura 🍃",
     },

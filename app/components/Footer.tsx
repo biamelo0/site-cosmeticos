@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Bottom Footer: Payment badges & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#9BB087]">
           <div>
-            © {new Date().getFullYear()} Verdure Botanicals Cosméticos Ltda. Todos os direitos reservados. CNPJ: 00.000.000/0001-00
+            © 2026 Verdure Botanicals Cosméticos Ltda. Todos os direitos reservados. CNPJ: 00.000.000/0001-00
           </div>
 
           {/* Payment Badges */}
