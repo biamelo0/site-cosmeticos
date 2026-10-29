@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-serif), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, sans-serif;
+  
+  --color-olive-950: #1B2113;
+  --color-olive-900: #2B351F;
+  --color-olive-850: #344026;
+  --color-olive-800: #3D4A2D;
+  --color-olive-700: #4D5C39;
+  --color-olive-600: #62744B;
+  --color-olive-500: #7A905E;
+  --color-olive-400: #9DB083;
+  --color-olive-300: #C2D0AF;
+  --color-olive-200: #DFE7D4;
+  --color-olive-100: #EEF3E8;
+  --color-olive-50: #F6F9F3;
+
+  --color-cream-50: #FCFAF7;
+  --color-cream-100: #FAF7F2;
+  --color-cream-200: #F3ECE1;
+  --color-cream-300: #EADECF;
+  --color-sand: #E6DCCD;
+  --color-amber-gold: #C29B38;
+}
+
+:root {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* Custom Smooth Transitions */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAF7F2;
+  color: #242A1D;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Wavy Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Wave Ribbon Styling */
+.wavy-ribbon-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Arch Shape Utilities */
+.arch-card {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.arch-pill {
+  border-radius: 9999px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #A5B496;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7A905E;
+}
