@@ -5,24 +5,24 @@ import React from "react";
 export default function CommunityGrid() {
   const posts = [
     {
-      image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80",
+      image: "/community-1.jpg",
       handle: "@clarissaglow",
-      caption: "Meu momento de paz no café da manhã ✨",
+      caption: "Meu momento de paz matinal com a loção botânica ✨",
     },
     {
-      image: "https://images.unsplash.com/photo-1512290900672-1f4a9b6c0e5a?auto=format&fit=crop&w=600&q=80",
+      image: "/community-2.jpg",
       handle: "@sofia.botanics",
-      caption: "A textura dessa loção é surreal de macia 🌿",
+      caption: "A textura desse creme batido é surreal de macia e nutritiva 🌿",
     },
     {
-      image: "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?auto=format&fit=crop&w=600&q=80",
+      image: "/community-3.jpg",
       handle: "@beatriz.skincare",
-      caption: "Sem químicas, só ingredientes da natureza 💧",
+      caption: "Glow instantâneo com apenas 3 gotinhas do elixir natural 💧",
     },
     {
-      image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=600&q=80",
+      image: "/community-4.jpg",
       handle: "@verdurebotanicals",
-      caption: "Detalhes do nosso frasco âmbar reciclável 🍃",
+      caption: "O banho transformado em ritual de aromaterapia pura 🍃",
     },
   ];
 
@@ -62,9 +62,9 @@ export default function CommunityGrid() {
               />
 
               {/* Instagram Hover Overlay */}
-              <div className="absolute inset-0 bg-stone-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
-                <span className="text-xs font-bold">{post.handle}</span>
-                <p className="text-[11px] text-stone-300 line-clamp-2 mt-1">
+              <div className="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                <span className="text-xs font-bold tracking-wide text-[#E3ECD7]">{post.handle}</span>
+                <p className="text-[11px] text-stone-200 line-clamp-2 mt-1 leading-relaxed">
                   {post.caption}
                 </p>
               </div>
@@ -76,4 +76,3 @@ export default function CommunityGrid() {
     </section>
   );
 }
-
